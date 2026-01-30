@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: TestHighRanker
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 0}
-  characterName: 
+  characterFirstName: 
+  characterMiddleName: 
+  characterLastName: 
   characterStamp: {fileID: 0}

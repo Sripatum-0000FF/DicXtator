@@ -4,8 +4,12 @@ using UnityEngine;
 public class Character : ScriptableObject
 {
     [SerializeField] Sprite characterSprite;
-    [SerializeField] string characterName;
+    [SerializeField] string characterFirstName;
+    [SerializeField] string characterMiddleName;
+    [SerializeField] string characterLastName;
     
     public Sprite CharacterSprite => characterSprite;
-    public string CharacterName => characterName;
+    public string CharacterFirstName => characterFirstName;
+    public string CharacterMiddleName => characterMiddleName;
+    public string CharacterLastName => characterLastName;
 }
