@@ -12,4 +12,16 @@ public class Character : ScriptableObject
     public string CharacterFirstName => characterFirstName;
     public string CharacterMiddleName => characterMiddleName;
     public string CharacterLastName => characterLastName;
+
+    public virtual string GetCharacterName()
+    {
+        if (characterMiddleName != string.Empty)
+        {
+            return $"{characterFirstName} {characterMiddleName} {characterLastName}";
+        }
+        else
+        {
+            return $"{characterFirstName} {characterLastName}";
+        }
+    }
 }

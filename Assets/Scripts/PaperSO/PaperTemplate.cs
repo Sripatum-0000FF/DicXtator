@@ -18,5 +18,5 @@ public class PaperTemplate : ScriptableObject
     
     public Date WrittenDate => writtenDate;
     public string Text => text;
-    public Character WriterName => writerName;
+
 }

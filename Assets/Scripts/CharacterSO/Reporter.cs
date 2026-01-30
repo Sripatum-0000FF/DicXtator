@@ -35,6 +35,13 @@ public class Reporter : Character
             characterAlias = $"{CharacterFirstName[0]}. {CharacterLastName}";
         }
     }
-    
-    
+
+    public override string GetCharacterName()
+    {
+        if (characterAlias != String.Empty)
+        {
+            return characterAlias;
+        }
+        else return base.GetCharacterName();
+    }
 }
