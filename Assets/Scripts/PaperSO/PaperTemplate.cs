@@ -1,15 +1,22 @@
-using TMPro;
 using UnityEngine;
+
+[System.Serializable]
+public class Date
+{
+    public int day;
+    public int month;
+    public int year;
+}
 
 [CreateAssetMenu(fileName = "Paper", menuName = "Paper")]
 public class PaperTemplate : ScriptableObject
 {
-    [SerializeField] private Vector3 date;
+    [SerializeField] private Date writtenDate;
     [TextArea]
     [SerializeField] private string text;
     [SerializeField] private Character writerName;
     
-    public Vector3 Date => date;
+    public Date WrittenDate => writtenDate;
     public string Text => text;
     public Character WriterName => writerName;
 }
