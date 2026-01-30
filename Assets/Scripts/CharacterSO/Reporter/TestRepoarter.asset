@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: TestRepoarter
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 0}
-  characterFirstName: 
+  characterFirstName: MIke
   characterMiddleName: 
-  characterLastName: 
-  characterAlias: 
+  characterLastName: Kok
+  customAlias: 0
+  characterAlias: M. Kok

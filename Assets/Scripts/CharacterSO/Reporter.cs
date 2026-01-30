@@ -30,6 +30,7 @@ public class Reporter : Character
     [ContextMenu("Generate Character Alias")]
     public void GenerateCharacterAlias()
     {
+        if(characterAlias == String.Empty) return;
         if (characterAlias != $"{CharacterFirstName[0]}. {CharacterLastName}")
         {
             characterAlias = $"{CharacterFirstName[0]}. {CharacterLastName}";

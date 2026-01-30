@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c73a8e10df60845b51b540cef37a93, type: 3}
   m_Name: Paper
   m_EditorClassIdentifier: 
+  writtenDate:
+    day: 0
+    month: 0
+    year: 0
   text: 
-  writerName: {fileID: 0}
+  writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
