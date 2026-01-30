@@ -20,4 +20,8 @@ public class Entity : MonoBehaviour, IInteractable
         print("Check");
     }
 
+    public void OnMouseEnter()
+    {
+        print("MouseEnter");
+    }
 }
