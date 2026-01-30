@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68c73a8e10df60845b51b540cef37a93, type: 3}
-  m_Name: Paper
+  m_Name: TestPaper
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
-  text: 
+    day: 23
+    month: 12
+    year: 1969
+  text: 'Dear.
+
+    Bla bla bla bla  Bla
+
+    Bla bla Bla bla BLa'
   writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}

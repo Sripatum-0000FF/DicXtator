@@ -343,8 +343,9 @@ GameObject:
   - component: {fileID: 270847567}
   - component: {fileID: 270847566}
   - component: {fileID: 270847570}
+  - component: {fileID: 270847571}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: PaperObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,6 +467,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &270847571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270847565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478073353b893db42a265275be452ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperTemplate: {fileID: 11400000, guid: f6df37a9e543f8e46929f5d40c85f673, type: 2}
+  templateIndex: 0
 --- !u!1 &351156724
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 763746362}
+  - component: {fileID: 763746363}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -829,6 +845,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &763746363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763746361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88af7e305bb4244934678026bbb0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperUi: {fileID: 1547336402}
 --- !u!1 &1056841242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1312,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76288ca974a39b4d8dd6014d5a1bbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTemplates:
+  - {fileID: 690218409}
+  - {fileID: 690218409}
+  - {fileID: 690218409}
+  normalPaper:
+    dateText: {fileID: 351156726}
+    contentText: {fileID: 1416063786}
+    nameText: {fileID: 61224771}
 --- !u!1 &1599146651
 GameObject:
   m_ObjectHideFlags: 0

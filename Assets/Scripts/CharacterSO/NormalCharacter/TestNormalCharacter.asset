@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TestNormalCharacter
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 0}
-  characterFirstName: 
-  characterMiddleName: 
-  characterLastName: 
+  characterFirstName: Latte
+  characterMiddleName: Ice
+  characterLastName: Matcha
