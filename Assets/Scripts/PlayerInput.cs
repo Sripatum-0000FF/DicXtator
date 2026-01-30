@@ -4,15 +4,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private Vector3 rayDist;
-    
-    private Camera _mainCamera = Camera.main;
-
     private RaycastHit _hit;
     private Ray _ray;
     private IInteractable _interactable;
-    
-    private readonly InputAction _lookAction = InputManager.inputActions.Player.Look; 
+
+    private InputAction _lookAction;
+
+    private Camera _mainCamera;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnEnable()
     {
@@ -26,7 +24,8 @@ public class PlayerInput : MonoBehaviour
 
     void Awake()
     {
-       
+        _mainCamera  = Camera.main;
+       _lookAction = InputManager.inputActions.Player.Look; 
     }
     
     void Start()
@@ -35,7 +34,7 @@ public class PlayerInput : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         
     }
@@ -47,17 +46,12 @@ public class PlayerInput : MonoBehaviour
             print("Clicked");
             _interactable.Interact(gameObject);
         }
-        
-        if(RayCastFromCamera())
-        {
-            print(_hit);
-        }
+
     }
 
     private bool RayCastFromCamera()
     {
-        _ray = _mainCamera.ScreenPointToRay(_lookAction.ReadValue<Vector2>());
-        return (Physics.Raycast(_ray,out _hit, 100f));
+        return (Physics.Raycast(_mainCamera.ScreenPointToRay(Mouse.current.position.value), out _hit, 100f));
     }
     
 }
