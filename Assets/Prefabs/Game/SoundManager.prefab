@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music:
-  - name: menu
+  - name: Menu
     audioClip: {fileID: 8300000, guid: 73bf8335bc052c440b38125b1af7dc62, type: 3}
-  - name: bgm
+  - name: Bgm
     audioClip: {fileID: 8300000, guid: 714844a958153794ba2fd7135cdfc5e6, type: 3}
   sfx:
   - name: ButtonClick

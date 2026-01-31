@@ -74,9 +74,9 @@ public class PaperUi : MonoBehaviour
         stampPaper.logoImage.sprite = logoImage;
         stampPaper.stampImage.sprite = stampImage;
         
-        if(Resources.Load<Sprite>("PaperTextures/PaperTexture"))
+        if(Resources.Load<Sprite>("PaperTextures/FormalPaperTexture"))
         {
-            stampPaper.customTexture.sprite = Resources.Load<Sprite>("PaperTextures/StampedPaperTexture");
+            stampPaper.customTexture.sprite = Resources.Load<Sprite>("PaperTextures/FormalPaperTexture");
         }
     }
 
