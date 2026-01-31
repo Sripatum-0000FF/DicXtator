@@ -1,14 +1,18 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
+    [SerializeField] private LayerMask layerMask;
     private RaycastHit _hit;
     private Ray _ray;
     private IInteractable _interactable;
 
     private InputAction _lookAction;
+
+    private bool isOverTheUI = false;
 
     private Camera _mainCamera;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,14 +37,28 @@ public class PlayerInput : MonoBehaviour
         InputManager.ToggleActionMap(InputManager.inputActions.Player);
     }
 
-    // Update is called once per frame
-    void Update() 
+    private void Update()
     {
-        
+        if (EventSystem.current is not null && EventSystem.current.IsPointerOverGameObject())
+        {
+            isOverTheUI = true;
+        }
+        else
+        {
+            isOverTheUI =  false;
+        }
     }
 
     private void ClickObject(InputAction.CallbackContext ctx)
     {
+       if(isOverTheUI) return;
+        if (_interactable != null)
+        {
+            _interactable.Interact(gameObject);
+            _interactable = null;
+            return;
+        }
+        
         if(RayCastFromCamera() && _hit.collider.TryGetComponent(out _interactable))
         {
             print("Clicked");
@@ -53,5 +71,6 @@ public class PlayerInput : MonoBehaviour
     {
         return (Physics.Raycast(_mainCamera.ScreenPointToRay(Mouse.current.position.value), out _hit, 100f));
     }
+    
     
 }

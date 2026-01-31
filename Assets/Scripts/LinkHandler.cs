@@ -15,7 +15,7 @@ public class LinkHandler : MonoBehaviour, IPointerClickHandler
         if (linkIndex != -1)
         {
             TMP_LinkInfo linkInfo = contentText.textInfo.linkInfo[linkIndex];
-            
+
             string linkText = linkInfo.GetLinkText();
 
             if (WordsList.Instance.Words.TryGetValue(linkText, out string replacementWord))

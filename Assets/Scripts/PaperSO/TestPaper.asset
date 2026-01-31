@@ -19,6 +19,9 @@ MonoBehaviour:
   text: 'Dear.
 
     Bla <link="ChangeWord">kill</link> I hope we can relate in this
-    matter <link="ChangeWord">kill</link> balorepte <link="ChangeWord">TestingWord</link>'
+    matter <link="ChangeWord">kill</link> balorepte <link="ChangeWord">TestingWord</link>
+
+    <link="Redact">REdact
+    this shit MF</link>'
   writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
   customTexture: {fileID: 0}

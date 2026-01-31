@@ -10,7 +10,16 @@ public class Paper : Entity
     public override void Interact(GameObject interactor)
     {
         TemplateIndexDeterminer();
-        PopupPaper();
+        
+        if (GameManager.Instance.PaparData.CheckIfPaperIsOpen(templateIndex))
+        {
+            GameManager.Instance.PaparData.ClosePaper(templateIndex);
+        }
+        else
+        {
+            PopupPaper();
+        }
+
     }
     
     private void PopupPaper()
@@ -61,6 +70,22 @@ public class Paper : Entity
                 }
                 break;
             case 2:
+                ReporterPaperTemplate tempRep = paperTemplate as ReporterPaperTemplate;
+                Reporter tempReporter = tempRep.WriterName as Reporter;
+                if(tempRep == null) {print("tempRep is null"); return;}
+                if (tempReporter == null) {print("tempReporter is null"); return;}
+
+                if (paperTemplate.CustomTexture == null)
+                {
+                    GameManager.Instance.PaparData.SetUpReporterPaper(tempRep.WrittenDate.GetDate(), tempRep.Text,
+                        tempRep.WriterName.GetCharacterName());
+                }
+                else
+                {
+                    GameManager.Instance.PaparData.SetUpReporterPaper(tempRep.WrittenDate.GetDate(), tempRep.Text,
+                        tempRep.WriterName.GetCharacterName(),  tempRep.CustomTexture);
+                }
+                
                 
                 break;
             default:
@@ -72,7 +97,11 @@ public class Paper : Entity
 
     private void TemplateIndexDeterminer()
     {
-        if (paperTemplate as StampedPaperTemplate)
+        if (paperTemplate as ReporterPaperTemplate)
+        {
+            templateIndex = 2;
+        }
+        else if (paperTemplate as StampedPaperTemplate)
         {
             templateIndex = 1;
         }
@@ -81,9 +110,5 @@ public class Paper : Entity
             templateIndex = 0;
         }
     }
-
-    public void ClosePaper()
-    {
-        
-    }
+    
 }

@@ -19,11 +19,24 @@ public class StampPaper : NormalPaper
     public Image stampImage;
 }
 
+[Serializable]
+public class ReporterPaper : NormalPaper
+{
+    
+}
+
 public class PaperUi : MonoBehaviour
 {
     [SerializeField] private GameObject[] paperTemplates;
     [SerializeField] private NormalPaper normalPaper;
     [SerializeField] private StampPaper stampPaper;
+    [SerializeField] private ReporterPaper reporterPaper;
+
+    public bool CheckIfPaperIsOpen(int templateIndex)
+    {
+        return paperTemplates[templateIndex].activeInHierarchy;
+    }
+    
     public void ShowPaper(int templateIndex)
     {
         paperTemplates[templateIndex].SetActive(true);
@@ -40,9 +53,9 @@ public class PaperUi : MonoBehaviour
         normalPaper.contentText.text = content;
         normalPaper.nameText.text = writerName;
         
-        if(Resources.Load<Sprite>("PaperTextures/PaperTexture"))
+        if(Resources.Load<Sprite>("PaperTextures/NormalPaperTexture"))
         {
-            normalPaper.customTexture.sprite = Resources.Load<Sprite>("PaperTextures/PaperTexture");
+            normalPaper.customTexture.sprite = Resources.Load<Sprite>("PaperTextures/NormalPaperTexture");
         }
     }
     public void SetUpNormalPaper(string date, string content, string writerName, Sprite customTexture)
@@ -76,5 +89,25 @@ public class PaperUi : MonoBehaviour
         stampPaper.logoImage.sprite = logoImage;
         stampPaper.stampImage.sprite = stampImage;
         stampPaper.customTexture.sprite = customTexture;
+    }
+
+    public void SetUpReporterPaper(string date, string content, string writerName)
+    {
+        reporterPaper.dateText.text = date;
+        reporterPaper.contentText.text = content;
+        reporterPaper.nameText.text = writerName;
+
+        if (Resources.Load<Sprite>("PaperTextures/PaperTexture"))
+        {
+            reporterPaper.customTexture.sprite = Resources.Load<Sprite>("PaperTextures/PaperTexture");
+        }
+    }
+
+    public void SetUpReporterPaper(string date, string content, string writerName, Sprite customTexture)
+    {
+        reporterPaper.dateText.text = date;
+        reporterPaper.contentText.text = content;
+        reporterPaper.nameText.text = writerName;
+        reporterPaper.customTexture.sprite = customTexture;
     }
 }
