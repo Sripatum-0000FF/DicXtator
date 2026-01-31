@@ -10,16 +10,16 @@ public class Sound
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance;
+    public static SoundManager Instance;
 
     [SerializeField] private Sound[] music, sfx;
     [SerializeField] private AudioSource musicSource, sfxSource;
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
