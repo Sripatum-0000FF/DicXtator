@@ -694,10 +694,10 @@ MonoBehaviour:
     logoImage: {fileID: 6404516349912447996}
     stampImage: {fileID: 4375839662154453195}
   reporterPaper:
-    dateText: {fileID: 8706090727923929104}
-    contentText: {fileID: 7138140573016849197}
-    nameText: {fileID: 5349074381952604074}
-    customTexture: {fileID: 69580222644872373}
+    dateText: {fileID: 0}
+    contentText: {fileID: 0}
+    nameText: {fileID: 0}
+    customTexture: {fileID: 0}
 --- !u!1 &3481191276357783187
 GameObject:
   m_ObjectHideFlags: 0
