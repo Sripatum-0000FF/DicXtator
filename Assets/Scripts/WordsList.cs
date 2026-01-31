@@ -1,12 +1,17 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class WordsList : MonoBehaviour
 {
-    public static GameManager Instance;
-    [SerializeField] private PaperUi paperUi;
+    public static WordsList Instance;
+    private Dictionary<string, string> _words = new Dictionary<string, string>()
+    {
+        {"kill","help"},{"loss",""},{"TestingWord","LongAssWord"}
+    };
+    
+    public Dictionary<string, string> Words => _words;
 
-    public PaperUi PaparData => paperUi;
     private void Awake()
     {
         if (Instance != null && Instance != this)

@@ -18,6 +18,7 @@ MonoBehaviour:
     year: 1969
   text: 'Dear.
 
-    Bla <link="ChangeWord">This click</link> dsadasdasdadsasd'
+    Bla <link="ChangeWord">kill</link> I hope we can relate in this
+    matter <link="ChangeWord">kill</link> balorepte <link="ChangeWord">TestingWord</link>'
   writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
   customTexture: {fileID: 0}

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -5,34 +6,41 @@ using UnityEngine.EventSystems;
 public class LinkHandler : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private TMP_Text contentText;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        print("Pass");
-        print(contentText.text);
-        print(eventData.position);
-        print(eventData.pressEventCamera);
         int linkIndex = TMP_TextUtilities.FindIntersectingLink(contentText, eventData.position, eventData.pressEventCamera);
 
         if (linkIndex != -1)
         {
             TMP_LinkInfo linkInfo = contentText.textInfo.linkInfo[linkIndex];
-            string linkID = linkInfo.GetLinkID();
+            
+            string linkText = linkInfo.GetLinkText();
 
-            if (linkID != null)
+            if (WordsList.Instance.Words.TryGetValue(linkText, out string replacementWord))
             {
-                print("This work bro");
+                WordChanger(linkInfo, replacementWord);
             }
         }
     }
+
+    private void WordChanger(TMP_LinkInfo linkInfo, string word)
+    {
+        var textInfo = contentText.textInfo;
+        var text = contentText.text;
+
+        int firstChar = linkInfo.linkTextfirstCharacterIndex;
+        int lastChar = firstChar + linkInfo.linkTextLength - 1;
+
+        int startIndex = textInfo.characterInfo[firstChar].index;
+        int endIndex = textInfo.characterInfo[lastChar].index + 1;
+
+        int length = endIndex - startIndex;
+        
+        contentText.text = text.Remove(startIndex, length).Insert(startIndex, word);
+        
+        contentText.ForceMeshUpdate();
+    }
+    
 }

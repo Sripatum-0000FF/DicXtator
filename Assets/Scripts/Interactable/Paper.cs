@@ -5,6 +5,7 @@ public class Paper : Entity
 {
     [SerializeField] private PaperTemplate paperTemplate;
     private int templateIndex;
+    private bool firstTime = false;
     
     public override void Interact(GameObject interactor)
     {
@@ -14,6 +15,15 @@ public class Paper : Entity
     
     private void PopupPaper()
     {
+        if (!firstTime)
+        {
+            firstTime = true;
+        }
+        else
+        {
+            GameManager.Instance.PaparData.ShowPaper(templateIndex);
+            return;
+        }
         switch (templateIndex)
         {
             case 0:
@@ -70,5 +80,10 @@ public class Paper : Entity
         {
             templateIndex = 0;
         }
+    }
+
+    public void ClosePaper()
+    {
+        
     }
 }

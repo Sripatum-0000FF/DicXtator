@@ -28,7 +28,12 @@ public class PaperUi : MonoBehaviour
     {
         paperTemplates[templateIndex].SetActive(true);
     }
-
+    
+    public void ClosePaper(int templateIndex)
+    {
+        paperTemplates[templateIndex].SetActive(false);
+    }
+    
     public void SetUpNormalPaper(string date, string content, string writerName)
     {
         normalPaper.dateText.text = date;
