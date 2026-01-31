@@ -309,23 +309,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c81fca387546f2348b2bb675f626f8ac, type: 3}
---- !u!1 &536207630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3924698920769209592, guid: 408dee43290d87c40aa2cdeb7d93ab46, type: 3}
-  m_PrefabInstance: {fileID: 1890538408}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &536207631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536207630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3bea030dbda4a441b8e437a791106f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &903499938
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,94 +645,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: music.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[0].name
-      value: ButtonClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[1].name
-      value: LampClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[2].name
-      value: PaperFlick
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[3].name
-      value: RedactorDrag
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[4].name
-      value: PencilWriting
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[5].name
-      value: Stamp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[6].name
-      value: TelephoneRing
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[7].name
-      value: TubeSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: music.Array.data[0].name
-      value: menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: music.Array.data[1].name
-      value: bgm
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[0].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 44afab36fa514464f9b3a0c3b054d8f7, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[1].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c7f4c2c1a51b1b240ac98dd4c44fb19b, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[2].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ed2518bd940b0104db1fc6b41e6c482f, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[3].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 989a146500a43174a955f9eecda844c7, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[4].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8688ba6fd7d86ac46b28c5ae7d8bbaf8, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[5].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ef6940ced08cd474cb152e5cbcebd3a2, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[6].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 69d3e19e4464afc4e882bea6d4cc6a91, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: sfx.Array.data[7].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 2b98a47dfc1276d41872763dab95735f, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: music.Array.data[0].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 73bf8335bc052c440b38125b1af7dc62, type: 3}
-    - target: {fileID: 6698706049075816382, guid: 66133aaacb6772a4bb0a85bb5f96cc2a, type: 3}
-      propertyPath: music.Array.data[1].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 714844a958153794ba2fd7135cdfc5e6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -810,10 +705,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3924698920769209592, guid: 408dee43290d87c40aa2cdeb7d93ab46, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 536207631}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 408dee43290d87c40aa2cdeb7d93ab46, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
