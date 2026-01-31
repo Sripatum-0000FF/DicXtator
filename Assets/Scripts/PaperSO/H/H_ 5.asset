@@ -16,7 +16,19 @@ MonoBehaviour:
     day: 0
     month: 0
     year: 0
-  text: 
+  text: 'Orders lists
+
+    - Believe in Vivia Veritas
+
+    - Believe in Vivia Veritas
+
+    -
+    Believe in Vivia Veritas
+
+    - Believe in Vivia Veritas
+
+    - Believe in
+    Vivia Veritas'
   writerName: {fileID: 0}
   customTexture: {fileID: 0}
   logo: {fileID: 0}

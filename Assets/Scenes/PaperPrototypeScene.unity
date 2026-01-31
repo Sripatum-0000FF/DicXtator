@@ -670,17 +670,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &1395980565 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8933940118496396220, guid: c81fca387546f2348b2bb675f626f8ac, type: 3}
-  m_PrefabInstance: {fileID: 6162333177283406686}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1547336402 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 214954947252845885, guid: c81fca387546f2348b2bb675f626f8ac, type: 3}
@@ -934,25 +923,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700130257}
   m_CullTransparentMesh: 1
---- !u!1 &1857691410 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6756766370664865547, guid: c81fca387546f2348b2bb675f626f8ac, type: 3}
-  m_PrefabInstance: {fileID: 6162333177283406686}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1857691416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857691410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d0458ed3454334a81396a721e18eff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redactorText: "\u25A0"
-  contentText: {fileID: 1395980565}
 --- !u!1 &1941727721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,7 +1164,7 @@ PrefabInstance:
     - target: {fileID: 251505431632269705, guid: f3be1695cdf10314a9dea4814e9fa8ba, type: 3}
       propertyPath: paperTemplate
       value: 
-      objectReference: {fileID: 11400000, guid: a0f71f1171b671f4fb1dc30e9d5b75ba, type: 2}
+      objectReference: {fileID: 11400000, guid: 2090711e411a13347aae364880747dec, type: 2}
     - target: {fileID: 2782517383096556502, guid: f3be1695cdf10314a9dea4814e9fa8ba, type: 3}
       propertyPath: m_Name
       value: PaperObject
@@ -1505,9 +1475,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1941727722}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6756766370664865547, guid: c81fca387546f2348b2bb675f626f8ac, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1857691416}
     - targetCorrespondingSourceObject: {fileID: 4331323376082942363, guid: c81fca387546f2348b2bb675f626f8ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 447912260}

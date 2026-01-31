@@ -16,7 +16,11 @@ MonoBehaviour:
     day: 0
     month: 0
     year: 0
-  text: 
+  text: 'ANNOUNCEMENT! Recently, there has been a surge in forged government documents
+    used to impersonate state officials. Please inspect all information carefully.
+    Authentic government documents can be identified by the following: They MUST
+    bear the ''Verified'' confirmation! Any document without this is considered a
+    forgery.'
   writerName: {fileID: 0}
   customTexture: {fileID: 0}
   logo: {fileID: 0}

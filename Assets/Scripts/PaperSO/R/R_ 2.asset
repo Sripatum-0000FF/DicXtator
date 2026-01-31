@@ -17,7 +17,9 @@ MonoBehaviour:
     month: 0
     year: 0
   text: "I\u2019ve studied the operations of many high-ranking officers. Many are
-    just a greedy geezers leeching off the young kids. They didn't have to struggle
-    for power. They never cared about the people at all, only the money. Damn it."
-  writerName: {fileID: 0}
+    just a <link=\"Redacted\">greedy geezers leeching off the</link> young kids.
+    They <link=\"Redacted\">didn't</link> have to struggle for power. They <link=\"Redacted\">never</link>
+    cared about the people <link=\"Redacted\">at all, only the money</link>. Damn
+    it."
+  writerName: {fileID: 11400000, guid: 6c4b2c5392addc74d95e2876b10c5f81, type: 2}
   customTexture: {fileID: 0}

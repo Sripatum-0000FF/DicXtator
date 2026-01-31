@@ -17,8 +17,10 @@ MonoBehaviour:
     month: 0
     year: 0
   text: As a journalist, I have never seen anything like this. A beautiful nature
-    is being destroyed simply because soldiers accepted bribes from these scumbags.
-    Is there anything good people like us can do? We have the right to refuse to
-    see our beautiful nature destroyed by the hands of these evil people.
-  writerName: {fileID: 0}
+    is being <link="ChangeWord">destroyed</link> simply because soldiers accepted
+    <link="ChangeWord">bribes</link> from these <link="ChangeWord">scumbags</link>.
+    Is there anything good people like us can do? We have the right <link="Redacted">to
+    refuse</link> to see our beautiful nature <link="ChangeWord">destroyed</link> 
+    by the hands of these <link="ChangeWord">evil</link> people.
+  writerName: {fileID: 11400000, guid: 6c4b2c5392addc74d95e2876b10c5f81, type: 2}
   customTexture: {fileID: 0}

@@ -16,6 +16,7 @@ MonoBehaviour:
     day: 0
     month: 0
     year: 0
-  text: I know you're reading my private letters Stop it now, you asshole dictators.
-  writerName: {fileID: 0}
+  text: I know you're reading my private <link="Redacted">letters Stop it now, you</link>
+    asshole <link="Redacted">dictators</link>.
+  writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
   customTexture: {fileID: 0}
