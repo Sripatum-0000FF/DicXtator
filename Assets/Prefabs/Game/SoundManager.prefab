@@ -44,7 +44,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c90d2481ed4fdfe888800846de769387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: []
-  sfx: []
+  music:
+  - name: menu
+    audioClip: {fileID: 8300000, guid: 73bf8335bc052c440b38125b1af7dc62, type: 3}
+  - name: bgm
+    audioClip: {fileID: 8300000, guid: 714844a958153794ba2fd7135cdfc5e6, type: 3}
+  sfx:
+  - name: ButtonClick
+    audioClip: {fileID: 8300000, guid: 44afab36fa514464f9b3a0c3b054d8f7, type: 3}
+  - name: LampClick
+    audioClip: {fileID: 8300000, guid: c7f4c2c1a51b1b240ac98dd4c44fb19b, type: 3}
+  - name: PaperFlick
+    audioClip: {fileID: 8300000, guid: ed2518bd940b0104db1fc6b41e6c482f, type: 3}
+  - name: RedactorDrag
+    audioClip: {fileID: 8300000, guid: 989a146500a43174a955f9eecda844c7, type: 3}
+  - name: PencilWriting
+    audioClip: {fileID: 8300000, guid: 8688ba6fd7d86ac46b28c5ae7d8bbaf8, type: 3}
+  - name: Stamp
+    audioClip: {fileID: 8300000, guid: ef6940ced08cd474cb152e5cbcebd3a2, type: 3}
+  - name: TelephoneRing
+    audioClip: {fileID: 8300000, guid: 69d3e19e4464afc4e882bea6d4cc6a91, type: 3}
+  - name: TubeSound
+    audioClip: {fileID: 8300000, guid: 2b98a47dfc1276d41872763dab95735f, type: 3}
   musicSource: {fileID: 0}
   sfxSource: {fileID: 0}
