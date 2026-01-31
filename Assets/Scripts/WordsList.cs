@@ -7,7 +7,9 @@ public class WordsList : MonoBehaviour
     public static WordsList Instance;
     private Dictionary<string, string> _words = new Dictionary<string, string>()
     {
-        {"kill","help"},{"loss",""},{"TestingWord","LongAssWord"}
+        {"kill","help"},{"loss",""},{"TestingWord","LongAssWord"},
+        {"restored","destroyed "},{"bribes","kindness"},{"scumbags","good citizen"},
+        {"evil","good"}
     };
     
     public Dictionary<string, string> Words => _words;
