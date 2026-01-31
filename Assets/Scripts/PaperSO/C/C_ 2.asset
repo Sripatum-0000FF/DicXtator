@@ -16,8 +16,8 @@ MonoBehaviour:
     day: 0
     month: 0
     year: 0
-  text: "Hi son, it\u2019s Mom. Hope the army treats you well. I\u2019m worried the
-    Empire is provoking a war. I can't bear to lose you like your Dad... Please write
-    soon. Love, Mom"
-  writerName: {fileID: 0}
+  text: "Hi son, it\u2019s Mom. <link=\"Redacted\">Hope</link> the army treats you
+    well. <link=\"Redacted\">I\u2019m worried the Empire is provoking a war</link>.
+    I can't bear to lose you like your Dad... Please write soon. Love, Mom."
+  writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
   customTexture: {fileID: 0}

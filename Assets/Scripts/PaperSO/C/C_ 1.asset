@@ -17,9 +17,10 @@ MonoBehaviour:
     month: 0
     year: 0
   text: Dear Father, How are you doing, Dad? Is your health still strong? Things
-    on my end are not doing so well. Lately, business has been not much at all. A
-    lots of customers have all disappeared. only soldiers who keep increasing every
-    day. I hope you are very happy back home. As for me, I will try to be happy in
-    the Empire.
-  writerName: {fileID: 0}
+    on my end are <link="Redacted">not doing so</link> well. Lately, business has
+    been <link="Redacted">not much at all</link>. A lots of customers <link="Redacted">have
+    all disappeared</link>. only <link="Redacted">soldiers who</link> keep increasing
+    every day. I hope you are very happy back home. As for me, I <link="Redacted">will
+    try to</link> be happy in the Empire.
+  writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
   customTexture: {fileID: 0}

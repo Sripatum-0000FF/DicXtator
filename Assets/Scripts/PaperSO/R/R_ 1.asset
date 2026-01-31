@@ -18,8 +18,8 @@ MonoBehaviour:
     year: 0
   text: What the hell is Government Veritas doing? letting people <link="Redacted">starve</link>
     like this! The rich keep getting richer while ordinary citizens <link="Redacted">have
-    no right to</link> live a happy life, <link="Redacted">or even a normal one</link>.
-    <link="Redacted">You are drunk on power</link>. Mark my words, your government
-    is the most <link="Redacted">devoid of</link> freedom we have ever seen.
+    no right to</link> live a happy life, <link="Redacted">or even a normal one!.
+    !You are drunk on power</link>. Mark my words, your government is the most <link="Redacted">devoid
+    of</link> freedom we have ever seen.
   writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
   customTexture: {fileID: 0}
