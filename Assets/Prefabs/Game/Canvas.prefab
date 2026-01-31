@@ -662,6 +662,11 @@ MonoBehaviour:
     customTexture: {fileID: 5243374136370060339}
     logoImage: {fileID: 6404516349912447996}
     stampImage: {fileID: 4375839662154453195}
+  reporterPaper:
+    dateText: {fileID: 0}
+    contentText: {fileID: 0}
+    nameText: {fileID: 0}
+    customTexture: {fileID: 0}
 --- !u!1 &4331323376082942363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,7 +1256,6 @@ GameObject:
   - component: {fileID: 5048527400881076997}
   - component: {fileID: 4301444913681034657}
   - component: {fileID: 6714622188866840189}
-  - component: {fileID: 1563853220925093962}
   - component: {fileID: 2780493483481364598}
   m_Layer: 5
   m_Name: PaperTemplate
@@ -1319,19 +1323,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1563853220925093962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6756766370664865547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d0458ed3454334a81396a721e18eff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentText: {fileID: 8933940118496396220}
 --- !u!114 &2780493483481364598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,7 +1348,6 @@ GameObject:
   - component: {fileID: 535677372336946863}
   - component: {fileID: 270407219947215005}
   - component: {fileID: 7956430978199424629}
-  - component: {fileID: 5896600187335010167}
   m_Layer: 5
   m_Name: Texts
   m_TagString: Untagged
@@ -1451,19 +1441,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &5896600187335010167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7307384533526489611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d0458ed3454334a81396a721e18eff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentText: {fileID: 8933940118496396220}
 --- !u!1 &7500431994547737008
 GameObject:
   m_ObjectHideFlags: 0
