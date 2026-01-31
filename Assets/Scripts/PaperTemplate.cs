@@ -9,20 +9,22 @@ public class Date
 
     public string GetDate()
     {
-        return day + "/" + month + "/" + year;
+        return "Date " + day + "/" + month + "/" + year;
     }
 }
 
-[CreateAssetMenu(fileName = "Paper", menuName = "Paper")]
+[CreateAssetMenu(fileName = "NormalPapers", menuName = "Papers/Normal Paper")]
 public class PaperTemplate : ScriptableObject
 {
     [SerializeField] private Date writtenDate;
     [TextArea]
     [SerializeField] private string text;
     [SerializeField] private Character writerName;
+    [SerializeField] private Sprite customTexture;
     
     public string Text => text;
     public Character WriterName => writerName;
 
     public Date WrittenDate => writtenDate;
+    public Sprite CustomTexture => customTexture;
 }
