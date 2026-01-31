@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d261b6ce7fd9654a96f9f226b939b08, type: 3}
+  m_Name: R_ 4
+  m_EditorClassIdentifier: 
+  writtenDate:
+    day: 0
+    month: 0
+    year: 0
+  text: Hello. If you are reading this letter, you might be surprised that this is
+    neither a complaint nor a daily report. I simply wanted to speak with you directly.
+    I know full well that what you are doing is your duty, but please. I beg you
+    to stop deceiving the poor citizens with these fabricated lies. For God's sake,
+    you know it is the right thing to do.
+  writerName: {fileID: 0}
+  customTexture: {fileID: 0}

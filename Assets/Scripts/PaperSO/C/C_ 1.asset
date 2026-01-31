@@ -10,12 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68c73a8e10df60845b51b540cef37a93, type: 3}
-  m_Name: C_1
+  m_Name: C_ 1
   m_EditorClassIdentifier: 
   writtenDate:
     day: 0
     month: 0
     year: 0
-  text: 
+  text: Dear Father, How are you doing, Dad? Is your health still strong? Things
+    on my end are not doing so well. Lately, business has been not much at all. A
+    lots of customers have all disappeared. only soldiers who keep increasing every
+    day. I hope you are very happy back home. As for me, I will try to be happy in
+    the Empire.
   writerName: {fileID: 0}
   customTexture: {fileID: 0}

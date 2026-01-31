@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc4cb7d2c96ec3d41a07b0ce990a3b32, type: 3}
-  m_Name: H_1
+  m_Script: {fileID: 11500000, guid: 3d261b6ce7fd9654a96f9f226b939b08, type: 3}
+  m_Name: R_
   m_EditorClassIdentifier: 
   writtenDate:
     day: 0
@@ -19,4 +19,3 @@ MonoBehaviour:
   text: 
   writerName: {fileID: 0}
   customTexture: {fileID: 0}
-  logo: {fileID: 0}
