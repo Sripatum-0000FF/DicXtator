@@ -958,6 +958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930442d417ed58b41b99a721cae1f899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightGameObject: {fileID: 156802688}
 --- !u!136 &704027343
 CapsuleCollider:
   m_ObjectHideFlags: 0
