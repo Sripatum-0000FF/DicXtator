@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: R_ 6
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
-  text: 
-  writerName: {fileID: 0}
+    day: 10
+    month: 2
+    year: 1969
+  text: Testing testing your leader she is <link="ChangeWord">scumbags</link> <link="ChangeWord">evil</link>
+    <link="ChangeWord">bastard</link> only thing she good at is <link="Redacted">distort
+    the truth</link> <link="Redacted">, not just that she is</link> the <link="ChangeWord">worst</link>
+    <link="ChangeWord">dictators</link> of all time
+  writerName: {fileID: 11400000, guid: 66d0436bec52ec84f840687db53025e1, type: 2}
   customTexture: {fileID: 0}
