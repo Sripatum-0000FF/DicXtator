@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: R_ 4
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 5
+    month: 2
+    year: 1969
   text: <link="Redacted">Hello. If you are reading this letter, you might be surprised
     that this is neither a complaint nor a daily report. I simply wanted to speak
     with you directly. I know full well that what you are doing is</link> your duty,
     <link="Redacted">but please. I beg you to stop deceiving the poor citizens with
     these fabricated lies.</link> For God's sake, you know it is the right thing
     to do.
-  writerName: {fileID: 11400000, guid: 6c4b2c5392addc74d95e2876b10c5f81, type: 2}
+  writerName: {fileID: 11400000, guid: 66d0436bec52ec84f840687db53025e1, type: 2}
   customTexture: {fileID: 0}

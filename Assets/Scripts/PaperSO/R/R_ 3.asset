@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: R_ 3
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 4
+    month: 2
+    year: 1969
   text: As a journalist, I have never seen anything like this. A beautiful nature
     is being <link="ChangeWord">destroyed</link> simply because soldiers accepted
     <link="ChangeWord">bribes</link> from these <link="ChangeWord">scumbags</link>.
     Is there anything good people like us can do? We have the right <link="Redacted">to
     refuse</link> to see our beautiful nature <link="ChangeWord">destroyed</link> 
     by the hands of these <link="ChangeWord">evil</link> people.
-  writerName: {fileID: 11400000, guid: 6c4b2c5392addc74d95e2876b10c5f81, type: 2}
+  writerName: {fileID: 11400000, guid: 66d0436bec52ec84f840687db53025e1, type: 2}
   customTexture: {fileID: 0}

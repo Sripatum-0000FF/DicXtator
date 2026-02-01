@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: C_ 1
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 1
+    month: 1
+    year: 1969
   text: Dear Father, How are you doing, Dad? Is your health still strong? Things
     on my end are <link="Redacted">not doing so</link> well. Lately, business has
     been <link="Redacted">not much at all</link>. A lots of customers <link="Redacted">have
     all disappeared</link>. only <link="Redacted">soldiers who</link> keep increasing
     every day. I hope you are very happy back home. As for me, I <link="Redacted">will
     try to</link> be happy in the Empire.
-  writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
+  writerName: {fileID: 11400000, guid: 9f4b7ba6eb002714787b65077df413e3, type: 2}
   customTexture: {fileID: 0}

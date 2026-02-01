@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: R_ 5
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 24
+    month: 5
+    year: 1969
   text: 'BREAKING! Supreme Leader Vivia Veritas has sternly declared she will never
     allow the Federation to interfere in trade with our neighboring nations. He emphasized:
     if the Federation wants a fight, let them declare war! The Veritaria Empire has
     never known fear.'
-  writerName: {fileID: 11400000, guid: 6c4b2c5392addc74d95e2876b10c5f81, type: 2}
+  writerName: {fileID: 11400000, guid: 3df1570621cbd06448290df78ba1dca1, type: 2}
   customTexture: {fileID: 0}
