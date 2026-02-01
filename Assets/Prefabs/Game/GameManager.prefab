@@ -46,7 +46,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c88af7e305bb4244934678026bbb0b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassTubePrefab: {fileID: 7549262663992920778, guid: e85062b6b1e3d9a43bbbd808cd717414, type: 3}
+  glassTubeParent: {fileID: 0}
   paperUi: {fileID: 0}
+  paperPrefabs:
+  - {fileID: 1959430294911871483, guid: e96d1055c35df4e41bc32b63d0ba200e, type: 3}
+  - {fileID: 5195943888849484456, guid: 736f28e6c134114449a70f00758c09b0, type: 3}
+  - {fileID: 3079360826682810603, guid: 24f3f9e824707d94c8571f9c1c94c83a, type: 3}
+  - {fileID: 7523804900274281029, guid: 4949d99313662a64a8df1b638dcc643a, type: 3}
+  - {fileID: 3396954224779919900, guid: ce6ccee9a9d40ad499ddab329a505004, type: 3}
+  - {fileID: 460979435409599420, guid: d8f1da4e0451b804b8f0198f51cf2874, type: 3}
+  - {fileID: 4840706891300258901, guid: adc3390b5dcd1434783f683a5420a252, type: 3}
+  - {fileID: 742457070330756915, guid: 0e15180c82c1c21439c76d2d7b6c8f48, type: 3}
+  - {fileID: 1906248028530754554, guid: 38400dbe4d5859e4d96b774c99db8ac2, type: 3}
+  - {fileID: 7954005789597854417, guid: c407bf7179226bd48a56df84f76ccca7, type: 3}
+  - {fileID: 6902612338950060967, guid: df06e835d0081014d8c8598106462ed1, type: 3}
+  - {fileID: 7563776400284278604, guid: f38e8784eacf64f4398dd903659bbbdb, type: 3}
+  - {fileID: 1189368980326911757, guid: f36f8c42a6f78984789f48e4f3570872, type: 3}
+  - {fileID: 7602087429715566133, guid: ad4dcdaba917dcf4f873551f98953f43, type: 3}
 --- !u!114 &9216029590569626059
 MonoBehaviour:
   m_ObjectHideFlags: 0

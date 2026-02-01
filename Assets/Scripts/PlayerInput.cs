@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private LayerMask layerMask;
     private RaycastHit _hit;
     private Ray _ray;
     private IInteractable _interactable;
@@ -37,32 +36,14 @@ public class PlayerInput : MonoBehaviour
         InputManager.ToggleActionMap(InputManager.inputActions.Player);
     }
 
-    private void Update()
-    {
-        if (EventSystem.current is not null && EventSystem.current.IsPointerOverGameObject())
-        {
-            isOverTheUI = true;
-        }
-        else
-        {
-            isOverTheUI =  false;
-        }
-    }
-
     private void ClickObject(InputAction.CallbackContext ctx)
     {
-       if(isOverTheUI) return;
-        if (_interactable != null)
-        {
-            _interactable.Interact(gameObject);
-            _interactable = null;
-            return;
-        }
         
         if(RayCastFromCamera() && _hit.collider.TryGetComponent(out _interactable))
         {
             print("Clicked");
             _interactable.Interact(gameObject);
+            _interactable = null;
         }
 
     }
