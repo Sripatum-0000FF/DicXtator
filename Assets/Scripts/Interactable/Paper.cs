@@ -13,7 +13,7 @@ public class Paper : Entity
         
         if (GameManager.Instance.PaparData.CheckIfPaperIsOpen(templateIndex))
         {
-            GameManager.Instance.PaparData.ClosePaper(templateIndex);
+           // GameManager.Instance.PaparData.ClosePaper(templateIndex);
         }
         else
         {

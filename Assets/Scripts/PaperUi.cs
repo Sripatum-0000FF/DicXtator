@@ -31,7 +31,7 @@ public class PaperUi : MonoBehaviour
     [SerializeField] private NormalPaper normalPaper;
     [SerializeField] private StampPaper stampPaper;
     [SerializeField] private ReporterPaper reporterPaper;
-
+    [SerializeField] private GameObject buttonClose;
     public bool CheckIfPaperIsOpen(int templateIndex)
     {
         return paperTemplates[templateIndex].activeInHierarchy;
@@ -39,11 +39,13 @@ public class PaperUi : MonoBehaviour
     
     public void ShowPaper(int templateIndex)
     {
+        buttonClose.SetActive(true);
         paperTemplates[templateIndex].SetActive(true);
     }
     
     public void ClosePaper(int templateIndex)
     {
+        buttonClose.SetActive(false);
         paperTemplates[templateIndex].SetActive(false);
     }
     
@@ -109,5 +111,14 @@ public class PaperUi : MonoBehaviour
         reporterPaper.contentText.text = content;
         reporterPaper.nameText.text = writerName;
         reporterPaper.customTexture.sprite = customTexture;
+    }
+
+    public void CloseUI()
+    {
+        buttonClose.SetActive(false);
+        for (int i = 0; i < paperTemplates.Length; i++)
+        {
+            paperTemplates[i].SetActive(false);
+        }
     }
 }
