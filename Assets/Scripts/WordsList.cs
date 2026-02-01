@@ -9,7 +9,7 @@ public class WordsList : MonoBehaviour
     {
         {"kill","help"},{"loss",""},{"TestingWord","LongAssWord"},
         {"destroyed","restored"},{"bribes","kindness"},{"scumbags","good citizen"},
-        {"evil","good"}
+        {"evil","good"},{"bastard","saint"},{"worst","best"},{"dictators","hero"}
     };
     
     public Dictionary<string, string> Words => _words;
