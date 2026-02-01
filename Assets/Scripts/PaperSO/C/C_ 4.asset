@@ -16,7 +16,7 @@ MonoBehaviour:
     day: 11
     month: 1
     year: 1969
-  text: Oi <link="ChangeWord">scumbags</link> I know you're reading my private !letters
-    Stop it now, you! asshole !dictators!
+  text: Oi <link="ChangeWord">scumbags</link> I know you're reading my private <link="Redacted">letters
+    Stop it now, you</link> asshole <link="ChangeWord">dictators</link>
   writerName: {fileID: 11400000, guid: 96eeb510444166b4a86fda0113dec158, type: 2}
   customTexture: {fileID: 0}
