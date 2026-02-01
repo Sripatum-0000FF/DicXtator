@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: C_ 2
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 1
+    month: 2
+    year: 1969
   text: "Hi son, it\u2019s Mom. <link=\"Redacted\">Hope</link> the army treats you
     well. <link=\"Redacted\">I\u2019m worried the Empire is provoking a war</link>.
     I can't bear to lose you like your Dad... Please write soon. Love, Mom."
-  writerName: {fileID: 11400000, guid: 3ce0ed0cda65d4443bc71fa246c9fbf7, type: 2}
+  writerName: {fileID: 11400000, guid: ed0968b9a7b6d0d4c981255fc78941a0, type: 2}
   customTexture: {fileID: 0}

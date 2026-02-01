@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: R_ 2
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 3
+    month: 2
+    year: 1969
   text: "I\u2019ve studied the operations of many high-ranking officers. Many are
     just a <link=\"Redacted\">greedy geezers leeching off the</link> young kids.
     They <link=\"Redacted\">didn't</link> have to struggle for power. They <link=\"Redacted\">never</link>
     cared about the people <link=\"Redacted\">at all, only the money</link>. Damn
     it."
-  writerName: {fileID: 11400000, guid: 6c4b2c5392addc74d95e2876b10c5f81, type: 2}
+  writerName: {fileID: 11400000, guid: 66d0436bec52ec84f840687db53025e1, type: 2}
   customTexture: {fileID: 0}

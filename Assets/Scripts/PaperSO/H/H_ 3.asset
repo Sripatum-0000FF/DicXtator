@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: H_ 3
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 4
+    month: 1
+    year: 1969
   text: Hmm. Your work has been most satisfactory. As the Eldest Daughter and Supreme
     Leader of this Empire, We are deeply pleased that you have executed your duties
     with such excellence. We commend you. Pray, continue to maintain this virtue,
     for the greater good of our Empire. May the Truth be revealed to you. VV
-  writerName: {fileID: 0}
+  writerName: {fileID: 11400000, guid: 863955e15d5ce794091addf4c848ad56, type: 2}
   customTexture: {fileID: 0}
-  logo: {fileID: 0}
+  logo: {fileID: 21300000, guid: a050f426de0991b43856dde64243f743, type: 3}

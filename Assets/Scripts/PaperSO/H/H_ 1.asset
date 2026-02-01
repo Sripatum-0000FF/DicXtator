@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: H_ 1
   m_EditorClassIdentifier: 
   writtenDate:
-    day: 0
-    month: 0
-    year: 0
+    day: 15
+    month: 3
+    year: 1969
   text: Listen here. Your negligence has already caused the Empire too much damage.
     If you don't start taking your duty of 'Content Sanitization' seriously and cause
     us any further embarrassment, I will crack your skull open and stuff the Imperial
     regulations inside until you learn your lesson. Do not screw this up again, understand?
-  writerName: {fileID: 0}
+  writerName: {fileID: 11400000, guid: 00cacecdc3f99cf4eaaec10d40d84c6f, type: 2}
   customTexture: {fileID: 0}
-  logo: {fileID: 0}
+  logo: {fileID: 21300000, guid: a050f426de0991b43856dde64243f743, type: 3}
