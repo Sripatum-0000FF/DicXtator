@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
         if (paperPrefabs.Count == 0)
         {
             print("Run out");
+            SceneManagerSwap.Instance.ChangeScene("MainMenu");
         }
         else
         {
