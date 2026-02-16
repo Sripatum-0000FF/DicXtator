@@ -9,11 +9,15 @@ public class CharacterData : ScriptableObject
     [SerializeField] private string firstName;
     [SerializeField] private string middleName;
     [SerializeField] private string lastName;
-
+    
     public int index = 0;
     public Sprite CharacterSprite => characterSprite;
     public string FirstName => firstName;
     public string MiddleName => middleName;
     public string LastName => lastName;
-    
+
+    public string GetCharacterName()
+    {
+        return $"{firstName} {middleName} {lastName}";
+    }
 }
