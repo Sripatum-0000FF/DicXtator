@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "FamilyData", menuName = "Data/FamilyData")]
+[CreateAssetMenu(fileName = "FamilyData", menuName = "Singular Data/FamilyData")]
 public class FamilyData : ScriptableObject
 {
     static FamilyData _instance;
@@ -11,7 +11,7 @@ public class FamilyData : ScriptableObject
         {
             if (_instance == null)
             {
-                _instance = Resources.Load<FamilyData>("FamilyData");
+                _instance = Resources.Load<FamilyData>("FamilyData/FamilyData");
             }
             return _instance;
         }

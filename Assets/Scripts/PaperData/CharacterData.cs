@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Normal Character", menuName = "Data/Normal Character")]
+[CreateAssetMenu(fileName = "Normal Character", menuName = "Character Data/Normal Character")]
 public class CharacterData : ScriptableObject
 {
     [SerializeField] private Sprite characterSprite;

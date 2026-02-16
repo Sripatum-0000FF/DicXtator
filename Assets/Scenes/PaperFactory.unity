@@ -940,7 +940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: TestF TestM Veritas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da852cad5e615c94da2f440a0b847d18, type: 2}
   m_sharedMaterial: {fileID: 3450412590564955964, guid: da852cad5e615c94da2f440a0b847d18, type: 2}
@@ -1262,7 +1262,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 519352012}
   m_Father: {fileID: 1994026686}
@@ -1270,7 +1270,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 746.6667, y: 933.3333}
+  m_SizeDelta: {x: 746, y: 933}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735282568
 MonoBehaviour:
@@ -1425,11 +1425,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37fbbcea7e53d647ac78c110e6d97dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  normalPaper: {fileID: 1735282566}
   date: {fileID: 1561225252}
   recipient: {fileID: 627802372}
   content: {fileID: 60294190}
   closing: {fileID: 1202034377}
   sender: {fileID: 1519096521}
+  paperTexture: {fileID: 1735282568}
   paperData: {fileID: 11400000, guid: b813b5dd5f062434d80e78871df646e7, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

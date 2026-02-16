@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class PaperContent : MonoBehaviour
 {
+    [SerializeField] private GameObject normalPaper;
     [SerializeField] private TMP_Text date;
     [SerializeField] private TMP_Text recipient;
     [SerializeField] private TMP_Text content;
@@ -37,9 +38,22 @@ public class PaperContent : MonoBehaviour
                 break;
         }
         
-        
+        OpenPaper();
     }
 
+    public void OpenPaper()
+    {
+        switch (index)
+        {
+            case 0:
+                normalPaper.SetActive(true);
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+        }
+    }
     private void CleanPaperContent()
     {
         date.text = "";
