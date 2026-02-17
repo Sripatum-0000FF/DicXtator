@@ -176,7 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a test content paper
+  m_text: 'This is a test content tesingjhgjhkjhhjkhkhkkjhkjhkhjkjkhjhkhkhkhkhkhkhkhkhkhk
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da852cad5e615c94da2f440a0b847d18, type: 2}
   m_sharedMaterial: {fileID: 3450412590564955964, guid: da852cad5e615c94da2f440a0b847d18, type: 2}
@@ -510,7 +512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Good day Joy,
+  m_text: Good day Test,
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da852cad5e615c94da2f440a0b847d18, type: 2}
   m_sharedMaterial: {fileID: 3450412590564955964, guid: da852cad5e615c94da2f440a0b847d18, type: 2}

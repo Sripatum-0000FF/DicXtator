@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,46 +15,86 @@ public class PaperContent : MonoBehaviour
     
     [Header("PaperData")]
     [SerializeField] private Paper paperData;
+    private Paper _previousPaperData;
 
-    private int index;
+    private Sprite _defaultPaperTexture;
 
+    private void Awake()
+    {
+        _defaultPaperTexture = Resources.Load<Sprite>("PaperTextures/PaperTexture");
+    }
+
+    private void OnEnable()
+    {
+        Subscribe();
+        ChangePaperContent();
+    }
+
+    private void OnDisable()
+    {
+        Unsubscribe();
+    }
+
+    private void OnValidate()
+    {
+        if (_previousPaperData != paperData)
+        {
+            Unsubscribe();
+            Subscribe();
+            ChangePaperContent();
+        }
+    }
+
+    private void Subscribe()
+    {
+        if (paperData != null) paperData.OnDataChanged += ChangePaperContent;
+
+        _previousPaperData = paperData;
+    }
+
+    private void Unsubscribe()
+    {
+        if (_previousPaperData != null)
+            _previousPaperData.OnDataChanged -= ChangePaperContent;
+    }
+    
     [ContextMenu("Change Paper Content")]
     public void ChangePaperContent()
     {
         if (paperData == null) return;
         
-        IndexDeterminer();
-        
-        switch (index)
+        switch (paperData)
         {
-            case 0:
-                CleanPaperContent();
-                
-                date.text = paperData.Date.GetDate();
-                recipient.text = paperData.Recipient.GetRecipient();
-                content.text = paperData.Content;
-                closing.text = paperData.Closing.GetClosingValue();
-                sender.text = paperData.Sender != null ? paperData.Sender.GetCharacterName() : "";
-                paperTexture.sprite = paperData.PaperTexture != null ? paperData.PaperTexture : Resources.Load("PaperTextures/PaperTexture", typeof(Sprite)) as Sprite;
+            case NormalPaper normal:
+                ApplyNormalPaper(normal);
                 break;
+            
         }
         
-        OpenPaper();
     }
 
+    private void ApplyNormalPaper(NormalPaper paper)
+    {
+        CleanPaperContent();
+                
+        date.text = paper.Date.GetDate();
+        recipient.text = paper.Recipient.GetRecipient();
+        content.text = paper.Content;
+        closing.text = paper.Closing.GetClosingValue();
+        sender.text = paper.Sender != null ? paper.Sender.GetCharacterName() : "";
+        
+        if (_defaultPaperTexture == null)
+            _defaultPaperTexture = Resources.Load<Sprite>("PaperTextures/PaperTexture");
+        
+        paperTexture.sprite = paper.PaperTexture != null 
+            ? paper.PaperTexture : _defaultPaperTexture;
+    }
+    
     public void OpenPaper()
     {
-        switch (index)
-        {
-            case 0:
-                normalPaper.SetActive(true);
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-        }
+
     }
+    
     private void CleanPaperContent()
     {
         date.text = "";
@@ -63,15 +104,5 @@ public class PaperContent : MonoBehaviour
         sender.text = "";
         paperTexture.sprite = null;
     }
-    
-    private void IndexDeterminer()
-    {
-        switch (paperData)
-        {
-            case NormalPaper:
-                index = 0;
-                break;
-            
-        }
-    }
+
 }

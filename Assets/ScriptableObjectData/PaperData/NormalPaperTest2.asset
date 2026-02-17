@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d66afd3c464fd094280e4279530a8ad8, type: 3}
-  m_Name: Test
+  m_Name: NormalPaperTest2
   m_EditorClassIdentifier: 
   date:
     day: 1
-    month: 1
-    year: 1969
+    month: 2
+    year: 231
   recipient:
-    greeting: 3
-    recipient: Test
-  content: 'This is a test content tesingjhgjhkjhhjkhkhkkjhkjhkhjkjkhjhkhkhkhkhkhkhkhkhkhk
-
-'
-  closing: 5
-  sender: {fileID: 11400000, guid: dbc5e994daf445645b1585b56d1161ed, type: 2}
+    greeting: 2
+    recipient: 
+  content: dasdasd
+  closing: 8
+  sender: {fileID: 11400000, guid: fbf6f59a3d5b2af44b9b5c1a0543c964, type: 2}
   paperTexture: {fileID: 0}

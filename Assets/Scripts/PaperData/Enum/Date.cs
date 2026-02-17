@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public enum Month
 {
     January = 1,
@@ -17,7 +19,7 @@ public enum Month
 [System.Serializable]
 public struct Date
 {
-    public int day;
+    [Range(1,31)] public int day;
     public Month month;
     public int year;
 

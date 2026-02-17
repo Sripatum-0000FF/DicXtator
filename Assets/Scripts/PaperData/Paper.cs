@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class Paper : ScriptableObject
@@ -8,6 +9,8 @@ public abstract class Paper : ScriptableObject
     [SerializeField] private Closing closing;
     [SerializeField] private CharacterData sender;  
     [SerializeField] private Sprite paperTexture;
+
+    public event Action OnDataChanged;
     
     public Date Date => date;
     public Recipient Recipient => recipient;
@@ -15,4 +18,9 @@ public abstract class Paper : ScriptableObject
     public Closing Closing => closing;
     public CharacterData Sender => sender;
     public Sprite PaperTexture => paperTexture;
+
+    private void OnValidate()
+    {
+        OnDataChanged?.Invoke();
+    }
 }
