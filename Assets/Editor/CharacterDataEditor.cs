@@ -10,11 +10,12 @@ public class CharacterDataEditor : Editor
     SerializedProperty middleName;
     SerializedProperty lastName;
     SerializedProperty index;
-    
-    
+
+
     Texture2D previewTexture;
 
     int newIndex;
+
     private void OnEnable()
     {
         characterSprite = serializedObject.FindProperty("characterSprite");
@@ -29,24 +30,27 @@ public class CharacterDataEditor : Editor
         EditorGUILayout.LabelField("Character Data", EditorStyles.whiteLargeLabel);
         serializedObject.Update();
         EditorGUILayout.PropertyField(characterSprite);
-        
+
         GUILayout.Space(10);
         EditorGUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
 
         if (characterSprite.objectReferenceValue != null)
         {
-            Rect rect = EditorGUILayout.GetControlRect(GUILayout.Height(256), GUILayout.Width(256));
-            previewTexture = AssetPreview.GetAssetPreview(characterSprite.objectReferenceValue);
-            EditorGUI.DrawPreviewTexture(rect, previewTexture);
-            
+            Sprite sprite = characterSprite.objectReferenceValue as Sprite;
+            if (sprite != null)
+            {
+                Rect rect = EditorGUILayout.GetControlRect(GUILayout.Height(256), GUILayout.Width(256));
+                EditorGUI.DrawTextureTransparent(rect, sprite.texture, ScaleMode.ScaleToFit);
+            }
         }
-   
+
         GUILayout.FlexibleSpace();
         EditorGUILayout.EndHorizontal();
         GUILayout.Space(10);
-        
-        EditorGUILayout.LabelField($"Character Name: {firstName.stringValue} {middleName.stringValue} {lastName.stringValue}",
+
+        EditorGUILayout.LabelField(
+            $"Character Name: {firstName.stringValue} {middleName.stringValue} {lastName.stringValue}",
             EditorStyles.boldLabel);
 
         firstName.stringValue = EditorGUILayout.TextField("First Name", firstName.stringValue);
@@ -57,17 +61,25 @@ public class CharacterDataEditor : Editor
         {
             GoToPath();
         }
-        
+
         if (newIndex != index.intValue)
         {
             index.intValue = newIndex;
         }
-        lastName.stringValue = FamilyData.Instance.FamilyName[index.intValue];
-        
+
+        if (FamilyData.Instance != null &&
+            FamilyData.Instance.FamilyName != null &&
+            FamilyData.Instance.FamilyName.Length > 0 &&
+            index.intValue < FamilyData.Instance.FamilyName.Length)
+        {
+            lastName.stringValue = FamilyData.Instance.FamilyName[index.intValue];
+        }
+
         GUILayout.Space(2);
         DrawHorizontalLine();
         EditorGUILayout.LabelField("Role", EditorStyles.boldLabel);
-        DrawPropertiesExcluding(serializedObject, "m_Script","characterSprite","firstName", "middleName", "lastName", "index");
+        DrawPropertiesExcluding(serializedObject, "m_Script", "characterSprite", "firstName", "middleName", "lastName",
+            "index");
         serializedObject.ApplyModifiedProperties();
     }
 

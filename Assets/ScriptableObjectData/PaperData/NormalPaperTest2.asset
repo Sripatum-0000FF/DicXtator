@@ -19,7 +19,7 @@ MonoBehaviour:
   recipient:
     greeting: 2
     recipient: 
-  content: dasdasd
+  content: d
   closing: 8
   sender: {fileID: 11400000, guid: fbf6f59a3d5b2af44b9b5c1a0543c964, type: 2}
   paperTexture: {fileID: 0}
