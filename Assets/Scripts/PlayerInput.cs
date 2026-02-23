@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private CinemachineCamera mainCamera;
+    [SerializeField] private Transform playerHead;
 
     private IInteractable _interactable;
     private RaycastHit _hit;
@@ -25,6 +26,11 @@ public class PlayerInput : MonoBehaviour
         if (mainCamera == null)
         {
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CinemachineCamera>();
+        }
+
+        if (playerHead == null)
+        {
+            playerHead = GameObject.FindGameObjectWithTag("PlayerHead").transform;
         }
     }
 
